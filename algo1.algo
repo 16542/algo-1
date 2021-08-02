@@ -30,7 +30,7 @@ BEGIN
     END_FF
     FOR B FROM 0 TO G STEP step  DO
         F = UPPERCASE(D[B]);
-        IF (F='A') OR (F='E') OR (F='I') OR (F='O') OR (F='E') THEN
+        IF (F='l') OR (F='s') OR (F='n') OR (F='v') OR (F='s') THEN
           voyell = voyell + 1;
         END_IF
     END_FOR
@@ -38,5 +38,6 @@ BEGIN
     write('The length of the sentence ', G);
     write('The number of words in the sentence  ', words);
     write('The number of voyell in the sentence  ', voyell);
+    
 
 END
