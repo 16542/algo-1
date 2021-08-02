@@ -1,0 +1,42 @@
+ALGORITHM 
+VAR
+     F,cCHAR;
+    D  STRING;
+    B,G,j,voyell INTEGER=0;
+    words INTEGER=1;
+BEGIN
+      WHILE (TRUE) DO
+        write('Type a CHAR ');
+        read(c);
+
+        IF (C='.') THEN
+            BREAK
+        END_IF
+         D=D+c;
+    END_WHILE
+
+    WHILE(TRUE) DO
+        IF (D[G]='.') THEN
+            BREAK;
+        ELSE
+           G= G + 1;
+        END_IF
+
+    END_WHILE
+    FOR j FROM 0 TO G STEP step  DO
+        IF (D[j]=' ') THEN
+            words = words + 1;
+        END_IF
+    END_FF
+    FOR B FROM 0 TO G STEP step  DO
+        F = UPPERCASE(D[B]);
+        IF (F='A') OR (F='E') OR (F='I') OR (F='O') OR (F='E') THEN
+          voyell = voyell + 1;
+        END_IF
+    END_FOR
+      write('THE SENTENCE IS  ', D);
+    write('The length of the sentence ', G);
+    write('The number of words in the sentence  ', words);
+    write('The number of voyell in the sentence  ', voyell);
+
+END
